@@ -1,13 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export',
-  images: {
-    unoptimized: true,
-  },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
+  // Vercel deploys Next.js natively — no static export needed.
+  // API routes, image optimization, and SSR all work out of the box.
 };
 
 export default nextConfig;
