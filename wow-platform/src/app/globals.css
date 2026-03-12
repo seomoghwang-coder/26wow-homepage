@@ -1,0 +1,92 @@
+@import "tailwindcss";
+@import "../styles/animations.css";
+
+@theme inline {
+  /* ── Brand Colors ─────────────────────────────── */
+  --color-brand-navy:          #0f2044;
+  --color-brand-navy-dark:     #0a1628;
+  --color-brand-navy-light:    #1a2e5a;
+  --color-brand-navy-muted:    #243b6e;
+
+  --color-brand-emerald:       #10b981;
+  --color-brand-emerald-dark:  #059669;
+  --color-brand-emerald-light: #34d399;
+  --color-brand-emerald-pale:  #d1fae5;
+
+  /* ── Surface Colors ───────────────────────────── */
+  --color-surface-primary:     #ffffff;
+  --color-surface-secondary:   #f8fafc;
+  --color-surface-tertiary:    #f1f5f9;
+
+  /* ── Text Colors ──────────────────────────────── */
+  --color-text-primary:        #0f172a;
+  --color-text-secondary:      #475569;
+  --color-text-muted:          #94a3b8;
+  --color-text-on-dark:        #ffffff;
+  --color-text-on-dark-muted:  #cbd5e1;
+
+  /* ── UI Colors ────────────────────────────────── */
+  --color-border:              #e2e8f0;
+  --color-border-dark:         #334155;
+  --color-accent-amber:        #f59e0b;
+  --color-accent-amber-pale:   #fef3c7;
+
+  /* ── Fonts ────────────────────────────────────── */
+  --font-sans: var(--font-noto-sans-kr), 'Apple SD Gothic Neo', 'Malgun Gothic', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+}
+
+/* ── Base Resets ──────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-text-primary);
+  background-color: var(--color-surface-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Korean Typography ────────────────────────────── */
+h1, h2, h3, h4, h5, h6 {
+  word-break: keep-all;
+  line-height: 1.35;
+  font-weight: 700;
+}
+
+p, li, span, td, th {
+  word-break: keep-all;
+}
+
+/* ── Focus Styles ─────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--color-brand-emerald);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ── Custom Scrollbar ─────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-surface-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-navy-muted);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-navy);
+}
