@@ -1,1 +1,6 @@
-{}
+{
+  "buildCommand": "cd wow-platform && npm install && npm run build",
+  "outputDirectory": "wow-platform/.next",
+  "installCommand": "cd wow-platform && npm install",
+  "framework": "nextjs"
+}
