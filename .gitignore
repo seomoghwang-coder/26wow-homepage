@@ -1,14 +1,20 @@
 # Claude Code internal files
 SKILL.md
 
-# Node / Next.js (covered by wow-platform/.gitignore, listed here for safety)
-wow-platform/node_modules/
-wow-platform/.next/
-wow-platform/out/
-wow-platform/.env*
-wow-platform/next-env.d.ts
-wow-platform/*.tsbuildinfo
+# Node / Next.js
+node_modules/
+.next/
+out/
+.env*
+next-env.d.ts
+*.tsbuildinfo
+
+# wow-platform 하위 폴더 (이제 루트로 이동됨)
+wow-platform/
 
 # OS
 .DS_Store
 Thumbs.db
+
+# Vercel
+.vercel
